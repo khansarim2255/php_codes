@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function f1(){
+var nm=fr1.nm.value;
+fr1.enm.value=nm;
+}
+function f2(){
+var nm=fr1.nm.value;
+fr1.enm.value=nm;
+fr1.nm.value="";
+}
+</script>
+</head>
+<body>
+<form name="fr1">
+Enter your Name: <input type="text" name="nm"><br>
+<input type="Button" value="COPY PASTE" onClick="f1();">
+<input type="Button" value="CUT PASTE" onClick="f2();"><br>
+Entered Name is: <input type="text" name="enm"><br>
+</form>
+</body>
+</html>

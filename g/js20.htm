@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function set(){
+fr1.s1.focus();
+}
+function txtEnb(){
+var q=fr1.s1.value;
+if(q=="OTHER")
+fr1.quali.disabled=false;
+else{
+fr1.quali.value="";
+fr1.quali.disabled=true;
+}
+//alert("txEnb");
+}
+</script>
+</head>
+<body onload="set();">
+<form name="fr1">
+Enter QualificTION: 
+<select name="s1" onchange="txtEnb();">
+<option></option>
+<option>MCA</option>
+<option>MBA</option>
+<option>OTHER</option>
+</select>
+Enter QUALI: <input type="text" name="quali" disabled><br>
+<!-- <input type="Button" value="Generate Table" onClick="f1();">-->
+</form>
+</body>
+</html>

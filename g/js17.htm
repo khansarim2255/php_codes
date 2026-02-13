@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function f1(){
+var fnm=fr1.fnm.value;
+var mnm=fr1.mnm.value;
+var lnm=fr1.lnm.value;
+var full=fnm+" "+mnm+" "+lnm;
+fr1.full.value=full;
+}
+
+</script>
+</head>
+<body>
+<form name="fr1">
+Enter First Name: <input type="text" name="fnm"><br>
+Enter Middle Name: <input type="text" name="mnm"><br>
+Enter Last Name: <input type="text" name="lnm"><br>
+<input type="Button" value="GET FULL NAME" onClick="f1();">
+Entered FULL Name is: <input type="text" name="full"><br>
+</form>
+</body>
+</html>

@@ -1,3 +1,3 @@
 <?php
-$con=mysqli_connect("localhost","root","","mca2025");
+$con=mysqli_connect("localhost","root","","2025");
 ?>

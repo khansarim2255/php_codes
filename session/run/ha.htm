@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+</head>
+<body>
+
+<script>
+    // Accept rows and columns from user
+    let rows = prompt("Enter number of rows");
+    let cols = prompt("Enter number of columns");
+    let count = 0;
+    // Generate table
+    document.write("<table border='1' cellpadding='5'>");
+
+    for(let i = 1; i <= rows; i++){
+        document.write("<tr>");
+        for(let j = 1; j <= cols; j++){
+            document.write("<td>Row ") + (num++)  + ("</td>");
+        }
+        document.write("</tr>");
+    }
+
+    document.write("</table>");
+</script>
+
+</body>
+</html>

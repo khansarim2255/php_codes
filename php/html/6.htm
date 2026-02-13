@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onclick="palind()">
+        string: <input type="text" name="str" id="str">
+        <input type="submit" name="" id="" value="Check String is Palindrome">
+    </form>
+    <script>
+        function palind(){
+            let str = document.getElementById('str').value;
+            let rstr = str.reverse();
+            if(rstr === str){
+                alert("String is palindrome");
+            }
+            else{
+                alert("String is not palindrome");
+            }
+        }
+    </script>
+</body>
+</html>

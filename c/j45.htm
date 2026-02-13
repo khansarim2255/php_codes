@@ -1,0 +1,25 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+function sq(num){
+return num*num;
+}
+function cube(num){
+return num*num*num;
+}
+function f11(){
+var n1=parseInt(f1.t1.value);
+if(confirm("Are you sure want to see the SQ and Cube of the Given Number")){
+f1.t2.value=sq(n1);
+f1.t3.value=cube(n1);
+}
+}
+</script>
+</body>
+<form name="f1">
+N: <input type="text" name="t1"><br>
+<input type="button" name="b" value="   GET SQ and CUBE   " onclick="f11();"><br>
+SQ: <input type="text" name="t2"><br>
+Cube: <input type="text" name="t3"><br>
+</form>
+</body>
+</html>

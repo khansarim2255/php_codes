@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <form>
+        <input type="text" onkeyup="fact()">
+
+        <!-- <button onclick="fact()">Click</button> -->
+
+    </form>
+    <!-- <form onsubmit="alert('Form Submitted')">
+  <input type="text" onfocus="this.style.background='yellow'">
+  <input type="submit">
+</form> -->
+<script>
+// document.write("Hello JavaScript");
+        function fact(){
+        let num = prompt("enter the number:");
+        let f = 1;
+        for(let i=1;i<=num;i++){
+            f = f*i;
+        }
+        document.write(f);
+    }
+</script>
+</body>
+</html>

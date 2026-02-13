@@ -1,0 +1,25 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+function f11(){
+if(f1.b.value=="OTHER"){
+f1.oth.disabled=false;
+//alert(f1.b.value);
+}else{
+f1.oth.value="";
+f1.oth.disabled=true;
+}
+}
+</script>
+</body>
+<form name="f1" action="">
+<select name="b" onchange="f11(this);">
+<option value="">-select city-</option>
+<option value="VNS">VARANASI</option>
+<option value="LKO">LUCKNOW</option>
+<option value="KNP">KANPUR</option>
+<option value="OTHER">OTHER</option>
+</select>
+<input type="text" name="oth" disabled>
+</form>
+</body>
+</html>

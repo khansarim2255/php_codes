@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function chg(){
+var r1=fr1.r1.value;
+if(r1==1)
+fr1.action="js21.htm";
+if(r1==2)
+fr1.action="js20.htm";
+
+fr1.submit();
+}
+</script>
+</head>
+<body>
+<form name="fr1" action="">
+<input type="radio" value="1" name="r1" onclick="chg();"> Call js21<br>
+<input type="radio" value="2" name="r1" onclick="chg();"> Call js20<br>
+</form>
+</body>
+</html>

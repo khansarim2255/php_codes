@@ -1,0 +1,29 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+function f11(obj){
+alert(obj.value);
+if(obj.value=="GREEN"){
+f1.action="green.htm";
+f1.submit();
+}
+if(obj.value=="RED"){
+f1.action="red.htm";
+f1.submit();
+}
+if(obj.value=="YELLOW"){
+f1.action="yellow.htm";
+f1.submit();
+}
+}
+</script>
+</body>
+<form name="f1" action="">
+<select name="b" onchange="f11(this);">
+<option value="">-select color-</option>
+<option value="GREEN">GREEN</option>
+<option value="RED">RED</option>
+<option value="YELLOW">YELLOW</option>
+</select>
+</form>
+</body>
+</html>

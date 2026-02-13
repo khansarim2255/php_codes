@@ -1,0 +1,25 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+function f11(){
+var n1=f1.n1.value;
+var n2=f1.n2.value;
+if(n1==""){
+alert("Enter value for n1");
+f1.n1.focus();
+}else if(n2==""){
+alert("Enter value for n2");
+f1.n2.focus();
+}else{
+f1.action="result.htm";
+f1.submit();
+}
+}
+</script>
+</body>
+<form name="f1">
+N1: <input type="text" name="n1"><br>
+N2: <input type="text" name="n2"><br>
+<input type="button" name="b" value="   +   "  onclick="f11();">
+</form>
+</body>
+</html>

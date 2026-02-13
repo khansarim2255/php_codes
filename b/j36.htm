@@ -1,0 +1,26 @@
+<html>
+<script language="JavaScript" type="text/JavaScript">
+function f11(obj){
+//alert(obj.value);
+if(obj.value=="GREEN"){
+f1.action="green.htm";
+f1.submit();
+}
+if(obj.value=="RED"){
+f1.action="red.htm";
+f1.submit();
+}
+if(obj.value=="YELLOW"){
+f1.action="yellow.htm";
+f1.submit();
+}
+}
+</script>
+</body>
+<form name="f1" action="">
+<input name="b" type="radio" value="GREEN" onclick="f11(this);">GREEN<br>
+<input name="b" type="radio" value="RED" onclick="f11(this);">RED<br>
+<input name="b" type="radio" value="YELLOW" onclick="f11(this);">YELLOW<br>
+</form>
+</body>
+</html>
